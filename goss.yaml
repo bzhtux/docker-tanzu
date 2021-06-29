@@ -1,0 +1,38 @@
+---
+command:
+  curl -h:
+    exit-status: 0
+  telnet --help:
+    exit-status: 0
+  jq --help:
+    exit-status: 0
+  yq --help:
+    exit-status: 0
+  python --version:
+    exit-status: 0
+    stdout:
+    - Python 3.   
+  pip3 -h:
+    exit-status: 0     
+  tanzu version:
+    exit-status: 0
+    stdout:
+    - 1.3.1
+  helm version:
+    exit-status: 0
+    stdout:
+    - 3.6.0
+  kubectx -h:
+    exit-status: 0
+  kubens -h:
+    exit-status: 0
+  ldapsearch -VV:
+    exit-status: 0
+  kubectl version --client=true:
+    exit-status: 0
+    stdout:
+    - 1.21.0
+  velero version --client-only:
+    exit-status: 0
+    stdout:
+    - 1.6.0
