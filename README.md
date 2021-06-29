@@ -36,7 +36,7 @@ Tanzu docker image provides the following cli tools:
 Latest release:
 
 ```shell
-$ docker pull bzhtux/tanzu:0.0.1
+$ docker pull bzhtux/tanzu:0.1.0
 ```
 
 For other/old releases:
@@ -45,4 +45,4 @@ For other/old releases:
 $ docker pull bzhtux/tanzu:${tag}
 ```
 
-[docker hub](https://hub.docker.com/repository/docker/bzhtux/tanzu/tags?page=1&ordering=name)
+[docker hub](https://hub.docker.com/repository/docker/bzhtux/tanzu-tools/tags?page=1&ordering=name)
