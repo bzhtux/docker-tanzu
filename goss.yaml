@@ -36,3 +36,5 @@ command:
     exit-status: 0
     stdout:
     - 1.6.0
+  govc -h:
+    exit-status: 0

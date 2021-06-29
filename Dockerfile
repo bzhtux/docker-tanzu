@@ -39,4 +39,5 @@ RUN curl "http://dl.bzhtux-lab.net/tools/tanzu-cli-bundle-v${TANZU_VERSION}-linu
     && cp kubens /usr/bin/ \
     && curl -L "https://github.com/vmware-tanzu/velero/releases/download/v${VELERO_VERSION}/velero-v${VELERO_VERSION}-linux-amd64.tar.gz" -o velero.tar.gz \
     && tar xvf velero.tar.gz \
-    && cp  velero-v${VELERO_VERSION}-linux-amd64/velero /usr/bin/
+    && cp  velero-v${VELERO_VERSION}-linux-amd64/velero /usr/bin/ \
+    && curl -L -o - "https://github.com/vmware/govmomi/releases/latest/download/govc_$(uname -s)_$(uname -m).tar.gz" | tar -C /usr/bin -xvzf - govc

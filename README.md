@@ -18,6 +18,7 @@ Tanzu docker image provides the following cli tools:
 
  * curl: **v7.77.0**
  * git: **v2.32.0**
+ * govc: **v0.26.0**
  * helm **v3.6.0**
  * jinja2: **v3.0.1**
  * jq: **v20210212-7320**
@@ -36,7 +37,7 @@ Tanzu docker image provides the following cli tools:
 Latest release:
 
 ```shell
-$ docker pull bzhtux/tanzu:0.1.0
+$ docker pull bzhtux/tanzu:0.2.0
 ```
 
 For other/old releases:
