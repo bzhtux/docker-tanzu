@@ -1,0 +1,21 @@
+os: linux
+
+language: bash
+
+services:
+- docker
+
+branches:
+  only:
+    - master
+    - /^\d+\.\d+\.\d+$/
+
+before_install:
+- docker build -t docker-tanzu .
+- curl -L https://goss.rocks/install | sudo sh
+
+script:
+- dgoss run docker-tanzu sleep 3
+
+after_success:
+- ./docker.sh
