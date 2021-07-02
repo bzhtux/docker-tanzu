@@ -25,7 +25,8 @@ RUN apk upgrade \
 
 RUN curl "http://dl.bzhtux-lab.net/tools/tanzu-cli-bundle-v${TANZU_VERSION}-linux-amd64.tar" -o tanzu-cli.tar \
     && tar xvf tanzu-cli.tar \
-    && cp cli/cluster/v${TANZU_VERSION}/tanzu-cluster-linux_amd64 /usr/bin/tanzu \
+    && cp cli/core/v${TANZU_VERSION}/tanzu-core-linux_amd64 /usr/bin/tanzu \
+    && tanzu plugin install --local cli all \
     && curl -L "https://dl.k8s.io/release/v${KUBECTL_VERSION}/bin/linux/amd64/kubectl" -o /usr/bin/kubectl \
     && chmod +x /usr/bin/kubectl \
     && curl -L https://get.helm.sh/helm-v3.6.0-linux-amd64.tar.gz -o helm.tar.gz \

@@ -37,7 +37,7 @@ Tanzu docker image provides the following cli tools:
 Latest release:
 
 ```shell
-$ docker pull bzhtux/tanzu:0.3.0
+$ docker pull bzhtux/tanzu:0.4.0
 ```
 
 For other/old releases:
