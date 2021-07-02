@@ -18,7 +18,7 @@ RUN apk upgrade \
     python3 \
     && ln -sf python3 /usr/bin/python \
     && python3 -m ensurepip \
-    && pip3 install --no-cache --upgrade yq jinja2 \
+    && pip3 install --no-cache --upgrade yq jinja2 jinja2-cli \
     && mkdir -p /tmp/tanzu \
     && cd /tmp/tanzu \
     && rm -rf /var/cache/apk/* 
